@@ -14,6 +14,8 @@
 		D66A9048299ECE1F00C3C9C6 /* DesignCodeiOS16Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A9047299ECE1F00C3C9C6 /* DesignCodeiOS16Tests.swift */; };
 		D66A9052299ECE1F00C3C9C6 /* DesignCodeiOS16UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A9051299ECE1F00C3C9C6 /* DesignCodeiOS16UITests.swift */; };
 		D66A9054299ECE1F00C3C9C6 /* DesignCodeiOS16UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66A9053299ECE1F00C3C9C6 /* DesignCodeiOS16UITestsLaunchTests.swift */; };
+		D6C022AF29DF600900A07DB6 /* NavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C022AE29DF600900A07DB6 /* NavigationStackView.swift */; };
+		D6C022B129DF61BD00A07DB6 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C022B029DF61BD00A07DB6 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		D66A904D299ECE1F00C3C9C6 /* DesignCodeiOS16UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignCodeiOS16UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66A9051299ECE1F00C3C9C6 /* DesignCodeiOS16UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCodeiOS16UITests.swift; sourceTree = "<group>"; };
 		D66A9053299ECE1F00C3C9C6 /* DesignCodeiOS16UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCodeiOS16UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D6C022AE29DF600900A07DB6 /* NavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackView.swift; sourceTree = "<group>"; };
+		D6C022B029DF61BD00A07DB6 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +99,12 @@
 		D66A9034299ECE1B00C3C9C6 /* DesignCodeiOS16 */ = {
 			isa = PBXGroup;
 			children = (
+				D6C022AD29DF5FF200A07DB6 /* Views */,
 				D66A9035299ECE1B00C3C9C6 /* DesignCodeiOS16App.swift */,
-				D66A9037299ECE1B00C3C9C6 /* ContentView.swift */,
 				D66A9039299ECE1F00C3C9C6 /* Assets.xcassets */,
 				D66A903B299ECE1F00C3C9C6 /* DesignCodeiOS16.entitlements */,
 				D66A903C299ECE1F00C3C9C6 /* Preview Content */,
+				D6C022B029DF61BD00A07DB6 /* Data.swift */,
 			);
 			path = DesignCodeiOS16;
 			sourceTree = "<group>";
@@ -127,6 +132,15 @@
 				D66A9053299ECE1F00C3C9C6 /* DesignCodeiOS16UITestsLaunchTests.swift */,
 			);
 			path = DesignCodeiOS16UITests;
+			sourceTree = "<group>";
+		};
+		D6C022AD29DF5FF200A07DB6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D66A9037299ECE1B00C3C9C6 /* ContentView.swift */,
+				D6C022AE29DF600900A07DB6 /* NavigationStackView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +274,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D66A9038299ECE1B00C3C9C6 /* ContentView.swift in Sources */,
+				D6C022AF29DF600900A07DB6 /* NavigationStackView.swift in Sources */,
 				D66A9036299ECE1B00C3C9C6 /* DesignCodeiOS16App.swift in Sources */,
+				D6C022B129DF61BD00A07DB6 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +435,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Design Code";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -457,6 +474,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Design Code";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
