@@ -22,7 +22,6 @@ struct NavigationStackView: View {
                 case .card: Text(item.title)
                 case .charts: Text(item.title)
                 case .radial: Text(item.title)
-                case .halfsheet: Text(item.title)
                 case .gooey: Text(item.title)
                 case .actionbutton: Text(item.title)
                 }

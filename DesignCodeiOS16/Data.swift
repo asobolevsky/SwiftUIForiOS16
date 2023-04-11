@@ -21,7 +21,6 @@ var navigationItems = [
     NavigationItem(title: "Gooey Action Button", icon: "plus.circle", menu: .actionbutton),
     NavigationItem(title: "Gooey Menu", icon: "drop", menu: .gooey),
     NavigationItem(title: "Charts", icon: "chart.xyaxis.line", menu: .charts),
-    NavigationItem(title: "Half Sheet", icon: "rectangle.portrait.bottomhalf.filled", menu: .halfsheet),
 ]
 
 enum Menu: String {
@@ -29,7 +28,20 @@ enum Menu: String {
     case card
     case charts
     case radial
-    case halfsheet
     case gooey
     case actionbutton
 }
+
+struct ChartValue: Identifiable {
+    let id = UUID()
+    let day: String
+    let value: Double
+}
+
+let chartValues = [
+    ChartValue(day: "June 1", value: 200),
+    ChartValue(day: "June 2", value: 180),
+    ChartValue(day: "June 3", value: 220),
+    ChartValue(day: "June 4", value: 115),
+    ChartValue(day: "June 5", value: 280),
+]

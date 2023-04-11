@@ -19,9 +19,8 @@ struct ContentView: View {
             switch selectedMenu {
             case .compass: Text("Compass")
             case .card: Text("card")
-            case .charts: Text("charts")
+            case .charts: ChartView()
             case .radial: Text("radial")
-            case .halfsheet: Text("halfsheet")
             case .gooey: Text("gooey")
             case .actionbutton: Text("actionbutton")
             }
